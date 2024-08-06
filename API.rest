@@ -4,8 +4,11 @@
 @SERVER = {{HOST}}{{VERSION}}
 
 
+### GET ALL POKEMONS PAGINATION
+GET {{SERVER}}pokemon?pageNo=0&pageSize=10
+
 ### GET ALL POKEMONS
-GET {{SERVER}}pokemon
+GET {{SERVER}}pokemon/all
 
 
 ### GET POKEMON DETAILS
