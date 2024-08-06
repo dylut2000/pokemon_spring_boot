@@ -27,10 +27,10 @@ PUT {{SERVER}}pokemon/1/update
 Content-Type: application/json
 
 {
-  "name": "hardy",
+  "name": "hardy1",
   "type": "water"
 }
 
 
 ### DELETE POKEMON
-DELETE {{SERVER}}pokemon/7/delete
+DELETE {{SERVER}}pokemon/1/delete
