@@ -3,5 +3,34 @@
 @VERSION = /api/
 @SERVER = {{HOST}}{{VERSION}}
 
+
 ### GET ALL POKEMONS
 GET {{SERVER}}pokemon
+
+
+### GET POKEMON DETAILS
+GET {{SERVER}}pokemon/2
+
+
+### CREATE POKEMON
+POST {{SERVER}}pokemon/create
+Content-Type: application/json
+
+{
+  "name": "diglet",
+  "type": "water"
+}
+
+
+### CREATE POKEMON
+PUT {{SERVER}}pokemon/8/update
+Content-Type: application/json
+
+{
+  "name": "raychu",
+  "type": "water"
+}
+
+
+### DELETE POKEMON
+DELETE {{SERVER}}pokemon/7/delete
