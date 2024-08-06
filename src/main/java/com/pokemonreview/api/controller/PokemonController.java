@@ -2,7 +2,6 @@ package com.pokemonreview.api.controller;
 
 import com.pokemonreview.api.dto.PokemonDto;
 import com.pokemonreview.api.dto.PokemonResponse;
-import com.pokemonreview.api.model.Pokemon;
 import com.pokemonreview.api.service.PokemonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
