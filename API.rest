@@ -1,0 +1,7 @@
+### SERVER
+@HOST = http://localhost:8080
+@VERSION = /api/
+@SERVER = {{HOST}}{{VERSION}}
+
+### GET ALL POKEMONS
+GET {{SERVER}}pokemon
