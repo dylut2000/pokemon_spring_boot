@@ -9,7 +9,7 @@ GET {{SERVER}}pokemon
 
 
 ### GET POKEMON DETAILS
-GET {{SERVER}}pokemon/2
+GET {{SERVER}}pokemon/1
 
 
 ### CREATE POKEMON
@@ -23,11 +23,11 @@ Content-Type: application/json
 
 
 ### CREATE POKEMON
-PUT {{SERVER}}pokemon/8/update
+PUT {{SERVER}}pokemon/1/update
 Content-Type: application/json
 
 {
-  "name": "raychu",
+  "name": "hardy",
   "type": "water"
 }
 

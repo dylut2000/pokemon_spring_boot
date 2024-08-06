@@ -8,7 +8,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -29,8 +28,8 @@ public class PokemonController {
 
 
     @GetMapping("pokemon/{id}")
-    public Pokemon pokemonDetail(@PathVariable int id) {
-        return new Pokemon(id, "squirtle", "water");
+    public ResponseEntity<PokemonDto> pokemonDetail(@PathVariable int id) {
+        return ResponseEntity.ok(pokemonService.getPokemonById(id));
     }
 
 
@@ -42,9 +41,8 @@ public class PokemonController {
 
 
     @PutMapping("pokemon/{id}/update")
-    public ResponseEntity<Pokemon> updatePokemon(@RequestBody Pokemon pokemon, @PathVariable("id") int pokemonId) {
-        System.out.println(pokemon.toString());
-        return ResponseEntity.ok(pokemon);
+    public ResponseEntity<PokemonDto> updatePokemon(@RequestBody PokemonDto pokemonDto, @PathVariable("id") int pokemonId) {
+        return new ResponseEntity<>(pokemonService.updatePokemon(pokemonDto, pokemonId), HttpStatus.OK);
     }
 
 
