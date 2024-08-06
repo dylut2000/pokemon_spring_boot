@@ -37,3 +37,23 @@ Content-Type: application/json
 
 ### DELETE POKEMON
 DELETE {{SERVER}}pokemon/1/delete
+
+
+
+### Register
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "dudu",
+  "password": "zile"
+}
+
+### login
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "username": "dudu",
+  "password": "zile"
+}
